@@ -398,6 +398,16 @@ non-minimized.
 This event is guaranteed to be emitted after the `ready` event of `app`
 gets emitted.
 
+### Event: 'desktop-capturer-get-sources'
+
+Returns:
+
+* `event` Event
+* `webContents` [WebContents](web-contents.md)
+
+Emitted when `desktopCapturer.getSources()` is called in the renderer process of `webContents`.
+Calling `event.preventDefault()` will make it throw an error.
+
 ### Event: 'remote-require'
 
 Returns:
